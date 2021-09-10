@@ -22,6 +22,7 @@ import ParentComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import PortalDemo from "./components/PortalDemo";
+import HandleError from "./components/HandleError";
 
 
 
@@ -66,6 +67,11 @@ function App() {
         <RefsDemo/>
         <FocusInput/>
         <PortalDemo/>
+        <div>
+        <HandleError heroName='Batman'/>
+        <HandleError heroName='SuperMan'/>
+            <HandleError heroName='joker'/>
+        </div>
 
     </div>
   );
