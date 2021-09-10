@@ -14,6 +14,14 @@ import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/inline";
 import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
+import PureComp from "./components/PureComponent";
+import RegularComponent from "./components/RegularComponent";
+import ParentComp from "./components/ParentComp";
+import RefsDemo from "./components/RefsDemo";
+import FocusInput from "./components/FocusInput";
+import PortalDemo from "./components/PortalDemo";
 
 
 
@@ -50,6 +58,14 @@ function App() {
         <Inline/>
         <Form />
         <LifecycleA/>
+        <FragmentDemo/>
+        <Table />
+
+        <ParentComp/>
+        <RegularComponent/>
+        <RefsDemo/>
+        <FocusInput/>
+        <PortalDemo/>
 
     </div>
   );
