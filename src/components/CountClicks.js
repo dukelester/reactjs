@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UpdatedComponent from "./WithCounter";
 
 class MouseCounter extends Component {
     constructor(props){
@@ -21,10 +22,11 @@ class MouseCounter extends Component {
             <div> Hello Higher components
                 <button type="submit"
                         className="btn btn-primary font-weight-bold mt-3"
-                onClick={this.incrementHandler}
-                >Clicked {count} times</button>
+                onClick={this.incrementHandler}>
+                    {this.props.name}
+                    Clicked {count} times</button>
             </div>
         )
     }
 }
-export default MouseCounter;
+export default UpdatedComponent(MouseCounter);

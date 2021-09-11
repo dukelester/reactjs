@@ -25,6 +25,9 @@ import PortalDemo from "./components/PortalDemo";
 import HandleError from "./components/HandleError";
 import MouseCounter from "./components/CountClicks";
 import HoverCounter from "./components/HoverCounter";
+import User from "./components/User";
+import ComponentC from "./components/ComponentC";
+import UserProvider from "./components/UserContext";
 
 
 
@@ -78,6 +81,11 @@ function App() {
             <MouseCounter/>
         </div>
         <HoverCounter/>
+        <User name= {(isLoggedIn) => isLoggedIn? 'duke lester': 'Guest'}/>
+            <UserProvider value="duke lester">
+            <ComponentC/>
+            </UserProvider>
+
 
     </div>
   );
